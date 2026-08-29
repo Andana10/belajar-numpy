@@ -34,5 +34,11 @@ bulan2 = np.array([
 ])
 gabung = np.stack([bulan1, bulan2]).reshape(2, 3, 4)
 print(gabung)
-total_per_toko = gabung.sum(axis=(0, 2))
+total_per_toko = gabung.sum(axis=(0, 2)) #axis 0 = bulan, axis 2 = minggu
 print(total_per_toko)
+
+#soal 24
+a = np.ones((3, 1, 4))
+b = np.ones((1, 5, 4))
+hasil = a + b
+print(hasil.shape)  # (3, 5, 4)
