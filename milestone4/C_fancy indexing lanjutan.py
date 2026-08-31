@@ -15,6 +15,9 @@ print(matriks[baris, kolom])
 
 #soal 11
 siswa = np.array(["Ana", "Budi", "Citra", "Dedi", "Eka"])
-nilai2 = np.array([75, 92, 60, 88, 55])
-idx_urut_nilai = np.argsort(nilai2)
-print(siswa[idx_urut_nilai[-3:]])
+nilai = np.array([75, 92, 60, 88, 55])
+
+idx_urutan = np.argsort(nilai)[::-1]   # urutkan lalu balik (jadi turun)
+top3_idx = idx_urutan[:3]
+print("Ranking 3 besar:", siswa[top3_idx])   # ['Budi' 'Dedi' 'Ana']
+print("Nilainya:", nilai[top3_idx])           # [92 88 75]
