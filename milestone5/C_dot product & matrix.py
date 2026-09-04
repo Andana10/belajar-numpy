@@ -38,4 +38,5 @@ X = np.array([
     [80, 2]
 ])
 w = np.array([2.0, 30])
-print(X @ w + 5)
+prediksi = X @ w + 5
+print(prediksi)

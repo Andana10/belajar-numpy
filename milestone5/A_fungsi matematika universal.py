@@ -29,6 +29,8 @@ print(softmax)
 print(softmax.sum()) #1.0 -> selalu total 100%, ini ciri khas softmax
 
 #soal 4
+#fungsi loss paling dasar
+# Hitung Mean Squared Error (MSE): rata-rata dari (y_pred - y_true)^2.
 y_pred = np.array([0.9, 0.1, 0.8, 0.3])
 y_true = np.array([1, 0, 1, 0])
 mse = np.mean((y_pred - y_true) ** 2)
